@@ -1,0 +1,95 @@
+html{
+
+}
+body{
+    background: url("img/back.webp") no-repeat;
+    background-size: auto;
+}
+.container{
+    box-sizing: border-box;
+    border-radius:35px;
+    border: 2px rgba(0,0,0,.3);
+    border-style:groove;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 10px 5px 5px #888888;
+}
+#profile{
+    width: 150px;
+    height: 150px;
+    border: 2px solid grey;
+    border-radius:50% ;
+    margin-top: 5px;
+}
+p{
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+}
+h2 ,p{
+    color: black;
+}
+.socials{
+    background: rgba(0,0,0,.4);
+    display: block;
+}
+a{
+    display: inline-block;
+    margin: 0;
+    text-decoration:none !important;
+
+
+}
+a:after{
+    display: block;
+    content: '';
+    border-bottom: solid 3px lightgray;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+
+}
+a:hover:after{
+    transform: scaleX(1);
+}
+.soimg{
+    display: inherit;
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.wrapper{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 200px;
+}
+.typewriter {
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3s steps(40,end),
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing{
+    from{width: 0}
+    to{width:100%}
+}
+@keyframes blink-caret{
+    from,to{ border-color:transparent }
+    50%{border-color: black;}
+}
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
